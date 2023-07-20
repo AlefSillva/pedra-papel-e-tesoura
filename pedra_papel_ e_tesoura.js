@@ -46,9 +46,9 @@ function jogo() {
   }
 
   if (pontosJogador > pontosComputador) {
-    console.log( "Você venceu!");
+    return "Você venceu!";
   } else {
-    console.log( "O computador venceu!");
+    return "O computador venceu!";
   }
 }
 
