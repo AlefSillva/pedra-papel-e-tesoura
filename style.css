@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#titulo {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f8c630;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 26px;
+  padding-top: 30px;
+  max-width: 800px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.imgs__and__buttons__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 306px;
+}
+
+.imagens {
+  display: flex;
+  gap: 30px;
+}
+
+.imagens img {
+  width: 100px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+  /* Estilo padrão dos botões */
+  background-color: #56a3a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito quando o cursor está sobre o botão */
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+  background-color: #438d90;
+}
+
+/* Efeito de sombra quando o botão é pressionado */
+#btn1:active,
+#btn2:active,
+#btn3:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de transição ao carregar a página */
+#btn1,
+#btn2,
+#btn3 {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#btn-jogar {
+  background-color: cadetblue;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+#btn-reiniciar {
+  background-color: red;
+  padding: 10px 30px;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.rodadas {
+  text-align: center;
+  width: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+/* Estilo do placar */
+.placar {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Estilo das informações de pontos do jogador e do computador */
+.placar p {
+  margin: 5px 0;
+}
+
+/* Estilo dos pontos do jogador e do computador */
+.placar span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#escolhas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1 px solid yellow;
+  gap: 50px;
+}
+
+.bloco1 {
+  padding: 65px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.bloco2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.bloco3 {
+  /* container */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 50px;
+  width: 690px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#blocos {
+  /* conjunto de blocos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 57px;
+}
+
+#versus {
+  align-self: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#blocoJogador,
+#blocoComput {
+  border: 1.5px solid rgb(67, 97, 195);
+  width: 150px;
+  height: 75px;
+}
+
+#blocoJogador > h3,
+#blocoComput > h3 {
+  background-color: #56a3a6;
+  margin-bottom: 5px;
+}
+
+#blocoJogador > p,
+#blocoJogador > h3,
+#blocoComput > p,
+#blocoComput > h3  {
+  text-align: center;
+  padding: 4px 27px;
+}
+
+#blocoResultado {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1.5px solid rgb(67, 97, 195);
+  padding-bottom: 20px;
+}
+
+#blocoResultado > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  width: 450px;
+}
+
+#res {
+  width: 400px;
+  padding: 7px 0px;
+  background-color: #56a3a6;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
