@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="PPT.js" defer></script>
 </head>
+
 <body>
-    <script src="pedra_papel_ e_tesoura.js"></script>
+    <main>
+        <div id="titulo">
+            <h1>Pedra, Papel & Tesoura</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="bloco1">
+                <div class="jogadores">
+                    <h3>Escolha uma opção!</h3>
+                </div>
+                <div class="imgs__and__buttons__container">
+                    <div class="imagens">
+                        <div id="pedra-img">
+                            <figure>
+                                <img src="assets/pedra.png" alt="Pedra">
+                            </figure>
+                        </div>
+                        <div id="papel-img">
+                            <figure>
+                                <img src="assets/papel.png" alt="Papel">
+                            </figure>
+                        </div>
+                        <div id="tesoura-img">
+                            <figure>
+                                <img src="assets/tesoura.png" alt="Tesoura">
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <button id="btn1">Pedra</button>
+                        <button id="btn2">Papel</button>
+                        <button id="btn3">Tesoura</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloco2">
+                <div class="rodadas">
+                    <h2><span id="count-rodada">1ª Rodada</span></h2>
+                </div>
+                <button id="btn-jogar">JOGAR</button>
+                <button id="btn-reiniciar">REINICIAR</button>
+
+                <div class="placar">
+                    <p>Jogador: <span id="pontuacao-jogador">0</span></p>
+                    <p>Computador: <span id="pontuacao-computador">0</span></p>
+                    <!-- <p id="resultado"></p> -->
+                </div>
+            </div>
+            <div class="bloco3">
+                <div id="blocos">
+                    <div id="blocoJogador">
+                        <h3 id="título-secundario1">Jogador</h3>
+                        <p id="escolha-jogador"></p>
+                    </div>
+                    <span id="versus">VS</span>
+                    <div id="blocoComput">
+                        <h3 id="título-secundario2">Computador</h3>
+                        <p id="escolha-computador"></p>
+                    </div>
+                    <div id="blocoResultado">
+                        <h2 id="res">Resultado</h2>
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
